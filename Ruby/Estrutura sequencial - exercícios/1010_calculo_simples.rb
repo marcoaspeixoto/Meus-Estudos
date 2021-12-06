@@ -12,3 +12,4 @@ valor_a_pagar = valor_total_peca_1 + valor_total_peca_2
 puts "VALOR A PAGAR: R$ %.2f" %valor_a_pagar
 
 
+
