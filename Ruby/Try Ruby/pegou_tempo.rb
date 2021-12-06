@@ -1,3 +1,1 @@
-5.times { |vez|
-  puts vez
-}
+puts "Alô Mundo!"
