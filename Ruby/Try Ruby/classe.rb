@@ -1,0 +1,3 @@
+class Blurb
+
+end
