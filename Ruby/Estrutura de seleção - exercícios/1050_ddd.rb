@@ -17,4 +17,6 @@ when 27
   puts "Vitoria"
 when 31
   puts "Belo Horizonte"
+else
+  puts "DDD nao cadastrado"
 end
