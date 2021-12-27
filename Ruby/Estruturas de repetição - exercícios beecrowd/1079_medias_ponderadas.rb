@@ -8,9 +8,7 @@ qtd_casos.times do
   nota2 = entrada[1].to_f
   nota3 = entrada[2].to_f
   media = ((nota1 * 2) + (nota2 * 3) + (nota3 * 5)) / 10
-  medias << media
+  medias << "%.1f" % media
 end
 
-for i in medias
-  puts "%.1f" %i
-end
+puts medias
