@@ -1,4 +1,4 @@
-Este repositório estão os códigos dos exercícios relacionados ao meu estudo em desenvolvimento web beck end.
+Nste repositório estão os códigos dos exercícios relacionados ao meu estudo em desenvolvimento web beck end.
 
 Os exercícios das seguintes pastas:
 
