@@ -7,6 +7,7 @@ linhas.times do
     print "#{num} "
     num += 1
   end
+
   puts "PUM"
   num += 1
 end
