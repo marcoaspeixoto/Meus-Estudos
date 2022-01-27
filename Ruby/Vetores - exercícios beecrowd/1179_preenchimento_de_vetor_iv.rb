@@ -1,28 +1,31 @@
-# frozen_string_literal: true
-
 par = []
 impar = []
+qtd_par = 0
+qtd_impar = 0
 
 15.times do
   n = gets.to_i
-  par << n if n.even?
-  impar << n if n.odd?
-end
-
-loop do
-  par.each_index do |i|
-    puts "par[#{i}] = #{par[i]}"
-    break if i == 4
-  end
-  par = par.drop(5)
-  loop do
-    impar.each_index do |i|
-      puts "impar[#{i}] = #{impar[i]}"
-      break if i == 4
+  if n.even?
+    par << n
+    qtd_par += 1
+    if qtd_par == 5
+      par.each_index { |i| puts "par[#{i}] = #{par[i]}"}
+      qtd_par = 0
+      par = []
     end
-    impar = impar.drop(5)
-    break if impar.none?
   end
-  break if par.none?
+
+  if n.odd?
+    impar << n
+    qtd_impar += 1
+    if qtd_impar == 5
+      impar.each_index { |i| puts "impar[#{i}] = #{impar[i]}"}
+      qtd_impar = 0
+      impar = []
+    end
+  end
+
 end
 
+impar.each_index { |i| puts "impar[#{i}] = #{impar[i]}"}
+par.each_index { |i| puts "par[#{i}] = #{par[i]}"}
