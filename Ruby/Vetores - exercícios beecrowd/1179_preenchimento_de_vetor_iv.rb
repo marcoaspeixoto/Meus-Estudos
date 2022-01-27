@@ -1,40 +1,28 @@
 # frozen_string_literal: true
 
+par = []
+impar = []
 
-vetor = []
-
-15.times do |i|
-  vetor[i] = gets.to_i
+15.times do
+  n = gets.to_i
+  par << n if n.even?
+  impar << n if n.odd?
 end
 
 loop do
-  par = []
-
-  vetor.each_index do |i|
-    next if vetor[i].nil?
-    if vetor[i].even?
-      par << vetor[i]
-      vetor[i] = nil
-    end
-    break if par.size == 5 || vetor.none?
+  par.each_index do |i|
+    puts "par[#{i}] = #{par[i]}"
+    break if i == 4
   end
-
-  (par.size).times { |i| puts "par[#{i}] = #{par[i]}" }
-
+  par = par.drop(5)
   loop do
-    impar = []
-
-    vetor.each_index do |i|
-      next if vetor[i].nil?
-      if vetor[i].odd?
-        impar << vetor[i]
-        vetor[i] = nil
-      end
-      break if impar.size == 5 || vetor.none?
+    impar.each_index do |i|
+      puts "impar[#{i}] = #{impar[i]}"
+      break if i == 4
     end
-
-    (impar.size).times { |i| puts "impar[#{i}] = #{impar[i]}" }
+    impar = impar.drop(5)
+    break if impar.none?
   end
-
-  break if vetor.none?
+  break if par.none?
 end
+
