@@ -19,6 +19,12 @@ h1 {
     font-weight: normal;
 }
 
+h1.title {
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+}
+
 .gray {
     background-color: #f7f7f7;
 }
@@ -34,6 +40,35 @@ h1 {
     font-size: 1.5rem;
     font-weight: 100;
 }
+
+.intro .cta {
+    margin: 2rem 0;
+}
+
+.button {
+    background-color: #3396f3;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 20%);
+}
+
+.button:hover {
+    box-shadow: 0 5px 10px 0 rgb(0 0 0 / 40%);
+}
+
+.primary {
+    background-color: #3396f3;
+    color: white;
+}
+
+.secondary {
+    background-color: white;
+    color: #444444;
+}
+
+
 
 footer {
     background-color: #2f7eb7;
