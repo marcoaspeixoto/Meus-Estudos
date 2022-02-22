@@ -121,3 +121,21 @@ h1.title {
 footer {
     background-color: #2f7eb7;
 }
+
+footer ul {
+    display: flex;
+    list-style-type: none;
+    padding-top: 3rem;
+    justify-content: space-evenly;
+}
+
+footer a {
+    color: white;
+}
+
+footer p.copyright {
+    padding: 3rem 0;
+    color: #ffffffdd;
+    text-align: center;
+}
+
