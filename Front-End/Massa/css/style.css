@@ -10,6 +10,36 @@ body {
     color: #444;
 }
 
+header {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
+.logo img {
+    width: 211px;
+}
+
+.sign-in {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sign-in button {
+    border: none;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+    width: 160px;
+    padding: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
 section {
     padding: 3rem 0 4rem 0;
 }
@@ -33,6 +63,11 @@ h1.title {
     max-width: 1000px;
     margin: auto;
     padding: 0 1rem;
+}
+
+.hero {
+    width: 60%;
+    margin: auto;
 }
 
 .intro p {
